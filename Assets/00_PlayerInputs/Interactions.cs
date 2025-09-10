@@ -14,7 +14,6 @@ public class Interactions : MonoBehaviour
     [SerializeField] private bool key1 = false;
     [SerializeField] private bool key2 = false;
     
-    
     //Se declaran las variables como booleanas para poder activarlas (pasar de false a true), y asi entrar a la puerta que las necesita
 
 
@@ -22,7 +21,7 @@ public class Interactions : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Start()
     {
-        
+
         
     }
 
@@ -47,7 +46,7 @@ public class Interactions : MonoBehaviour
                 if (key1 && key2) //Si tienes las 2 llaves, puedes abrir la puerta
                 {
                     Debug.Log("Abri la puerta");
-                    Animator animator = other.gameObject.GetComponent<Animator>(Pivote);
+                    Animator animator = other.gameObject.GetComponent<Animator>();
                 }
 
                 else //Si no tienes las llaves, no puedes abrir la puerta
