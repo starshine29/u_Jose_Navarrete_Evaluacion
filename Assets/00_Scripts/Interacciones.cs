@@ -5,16 +5,11 @@ public class Interacciones : MonoBehaviour
 
 
 {
-    private bool key1 = false; [SerializeField]
-    private bool key2 = false; [SerializeField]
+    [SerializeField] private bool key1 = false; 
+    [SerializeField] private bool key2 = false; 
     
     
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
+    
 
     private void OnTriggerEnter(Collider other)
     {
@@ -30,9 +25,5 @@ public class Interacciones : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+   
 }
